@@ -1,0 +1,73 @@
+.about-us {
+    display: block;
+    padding: 40px 20px;
+    background-color: #f8f8f8; /* Light grey background */
+  }
+  
+  .background-stripes {
+
+    width: 100%;
+    height: 20px;
+    background-image: url('/path-to-yellow-image.jpg'), url('/path-to-purple-image.jpg');
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-size: 50% 100%, 50% 100%;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .section {
+    flex: 1;
+    max-width: 45%; /* Ensures the two sections take equal width */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  .section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .details {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .read-more {
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .section {
+      max-width: 100%;
+    }
+  }
+    
